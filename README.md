@@ -6,23 +6,26 @@
 
 ## Date: 01-30-2024
 
+### Overview
+
+Web scraping is a data extraction technique used to gather information from websites automatically. This project focuses on creating a web scraper that automates the process of extracting valuable data from web pages. The key components employed are:
+
+#### 1. BeautifulSoup Library
+
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) is a Python library designed for pulling data out of HTML and XML files. In the context of this web scraper, it serves as a powerful tool for parsing HTML content, navigating the parse tree, and searching for specific elements, making it an ideal choice for extracting structured information from websites.
+
+#### 2. Playwright - Headless Browser Automation
+
+[Playwright](https://playwright.dev/docs/api/class-browser) is a headless browser automation library that simplifies web scraping tasks. With its robust set of APIs, Playwright allows easy manipulation of browser actions, enabling automated interactions with web pages. Its headless nature makes it suitable for running in environments without a graphical user interface.
+
+By combining the capabilities of BeautifulSoup and Playwright, this web scraper aims to streamline the process of collecting data from target websites efficiently. Whether extracting text, images, or other relevant information, the scraper automates repetitive tasks, saving time and effort in data retrieval.
+
 ### Links and Resources
 
-[Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [Wikipedia: Common Misconceptions](https://en.wikipedia.org/wiki/List_of_common_misconceptions)
+- [Requests Documentation](https://requests.readthedocs.io/en/latest/)
 
-[Wikipedia: Common Misconceptions](https://en.wikipedia.org/wiki/List_of_common_misconceptions)
-
-[Requests Documentation](https://requests.readthedocs.io/en/latest/)
-
-[playwright documentation](https://playwright.dev/docs/api/class-browser)
-
-### What is a web scraper?
-
-A web scraper is a program that automates the process of extracting data from websites. It works by using the [BeautifulSoup library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to scrape the data from the website. 
-
-Playwright is a headless browser library that makes it easy to automate web scraping.
-
-### Usage
+**TA's:** Tammy and Brandon
 
 ### Virtual Environment Setup
 
@@ -35,11 +38,11 @@ Playwright is a headless browser library that makes it easy to automate web scra
 
 ### Dependencies
 
+- Beautiful Soup
+- Playwright
+- Requests
+
 ### How to Run
 
 1. Activate the virtual environment (if not already activated).
-2. Run the serverless function: `vercel dev`
-
-### Tests
-
-No specific tests are provided for this serverless function. Feel free to create tests using your preferred testing framework.
+2. Run `python web-scraper/scraper.py`
